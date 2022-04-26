@@ -1,0 +1,13 @@
+function lib() {
+        var _windowContainer = null,
+        _guid = null,
+        _poll = this,
+        _name = '',
+        _store = null;
+
+        var header, panel;
+
+        var save = function(){ //Function for saving changes to the questionnaire
+            if (!panel.container['form'].pharmId) return false;
+
+            var modifyData = '';
